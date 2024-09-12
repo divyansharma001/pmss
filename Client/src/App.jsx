@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Outlet } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./Pages/LandingPage/LandingPage";
+import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
-  )
+    <div className='w-full overflow-hidden"'>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
