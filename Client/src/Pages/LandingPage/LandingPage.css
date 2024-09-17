@@ -1,0 +1,98 @@
+/* LandingPage.css */
+
+/* Root Styles */
+:root {
+  --primary-color: #ff9933; /* Orange */
+  --secondary-color: #138808; /* Green */
+  --background-color: #ffffff; /* White */
+  --text-color: #333;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-image-url.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: var(--background-color);
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background: var(--secondary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button.secondary {
+  background: var(--primary-color);
+}
+
+.cta-button:hover {
+  background: #6ebc1a; /* Slightly different shade for hover effect */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+/* Ticker Section */
+.ticker {
+  background: var(--secondary-color);
+  color: var(--background-color);
+  padding: 10px;
+  overflow: hidden;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-animation 15s linear infinite;
+}
+
+@keyframes ticker-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+  }
+}
