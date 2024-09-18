@@ -6,8 +6,8 @@ import { BsChatRightDots } from "react-icons/bs";
 
 const Sidebar = () => {
   return (
-    <>
-    <div className="xl:w-96 w-80 xl:p-4 p-2 bg-white flex-col justify-start items-start gap-5 inline-flex border-r">
+    <div className="">
+    <div className="w-80 p-2 bg-white flex-col justify-start items-start gap-5 inline-flex border-r">
       
       <div className="w-full p-3 rounded-lg border border-gray-300">
           <div className="w-full items-center flex">
@@ -179,7 +179,7 @@ const Sidebar = () => {
           </ul>
       </div>
      
-      <div className="w-full flex-col flex">
+      <div className="w-full flex-col flex bg-white text-left">
           <div className="h-8 px-3 items-center inline-flex">
               <h6 className="text-gray-500 text-xs font-semibold leading-4">SETTINGS</h6>
           </div>
@@ -255,7 +255,7 @@ const Sidebar = () => {
           </ul>
       </div>
       </div>
-    </>
+    </div>
   )
 }
 
