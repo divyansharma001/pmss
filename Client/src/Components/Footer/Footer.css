@@ -1,0 +1,31 @@
+/* Footer.css */
+
+.footer {
+    background: linear-gradient(90deg, #83cb7c, #4eca60); /* Green Gradient */
+    color: #ffffff; /* White */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  
+  .footer-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .footer-links a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #a3e4d7; /* Lighter shade of green */
+  }
+  
