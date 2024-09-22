@@ -4,9 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #ff9933, #ffcc33); /* Orange Gradient */
+    background: linear-gradient(90deg, #d8d8d3, #d8d8d3); /* Orange Gradient */
     padding: 10px 20px;
-    color: #ffffff; /* White */
+    color: #0a0909; /* White */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     position: sticky; /* Sticky navbar */
     top: 0;
@@ -30,7 +30,7 @@
   }
   
   .navbar-links a {
-    color: #ffffff; /* White */
+    color: #000000; /* White */
     text-decoration: none;
     transition: color 0.3s ease;
   }
