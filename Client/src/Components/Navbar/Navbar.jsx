@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
+import AICTE_Logo from "../../../public/logo_new.png";
 const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -11,10 +11,21 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-     <Link to='/'><div className="navbar-logo">PMSSS</div></Link> 
+      <div className="navbar-logo-container">
+        <Link to="/">
+          <img src={AICTE_Logo} alt="AICTE Logo" className="navbar-logo-img" />
+        </Link>
+        <Link to="/">
+          <img
+            src="/images/ministry-logo.png"
+            alt="Ministry of Education Logo"
+            className="navbar-logo-img"
+          />
+        </Link>
+      </div>
       <ul className="navbar-links">
         <li>
-          <Link to='/'>Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li
           className="has-mega-menu"
@@ -70,6 +81,14 @@ const Navbar = () => {
           <a href="#contact">Contact Us</a>
         </li>
       </ul>
+      <div className="auth-buttons">
+        {/* <Link to="/signup" className="auth-btn">
+          Sign Up
+        </Link> */}
+        <Link to="/signin" className="auth-btn">
+          Sign In
+        </Link>
+      </div>
     </nav>
   );
 };
