@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./LandingPage.css"; // Assuming you already have the necessary styles
-import heroImg from "../../../public/Hero-img.jpg";
+import heroImg from "../../../public/hero.png";
 
 const LandingPage = () => {
   return (

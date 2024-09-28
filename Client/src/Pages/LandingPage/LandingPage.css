@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;  /* Center the carousel horizontally */
   background-color: #f5f5f5; /* Fallback background color */
-  padding: 20px 0; /* Add padding to control vertical spacing */
+  /* padding: 20px 0;  */
 }
 
 /* Carousel Container Styling */
