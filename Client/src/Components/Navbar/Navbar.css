@@ -24,16 +24,22 @@
   margin-right: 10px;
 }
 
+/* Right-side content container */
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
 /* Navbar Links */
 .navbar-links {
   list-style: none;
   display: flex;
-  position: relative;
+  
+  /* margin-right: 20px; */
 }
 
 .navbar-links li {
   margin: 0 15px;
-  position: relative;
 }
 
 .navbar-links a {
@@ -104,11 +110,10 @@
   color: #ff9933;
 }
 
-/* Auth Buttons (Sign Up / Sign In) */
-.auth-buttons {
-  display: flex;
-  gap: 10px;
-}
+
+ .auth-button {
+  margin-left: 5px; /* Space between links and button */
+} 
 
 .auth-btn {
   padding: 8px 15px;
@@ -131,26 +136,20 @@
       padding: 10px;
   }
 
+  .navbar-right {
+      flex-direction: column;
+  }
+
   .navbar-links {
       flex-direction: column;
-      align-items: center;
-  }
+      /* align-items: center;*/
+  } 
 
   .navbar-links li {
       margin: 10px 0;
   }
 
-  .mega-menu {
-      width: 100%;
-      flex-direction: column;
-  }
-
-  .mega-menu-column {
-      margin-bottom: 20px;
-      margin-right: 0;
-  }
-
-  .auth-buttons {
+  .auth-button {
       margin-top: 10px;
   }
 }

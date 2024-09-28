@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import AICTE_Logo from "../../../public/logo_new.png";
+import Moe_logo from "../../../public/MOE_logo.png";
+
 const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
 
@@ -15,13 +17,13 @@ const Navbar = () => {
         <Link to="/">
           <img src={AICTE_Logo} alt="AICTE Logo" className="navbar-logo-img" />
         </Link>
-        <Link to="/">
+        {/* <Link to="/">
           <img
-            src="/images/ministry-logo.png"
+            src={Moe_logo}
             alt="Ministry of Education Logo"
             className="navbar-logo-img"
           />
-        </Link>
+        </Link> */}
       </div>
       <ul className="navbar-links">
         <li>
