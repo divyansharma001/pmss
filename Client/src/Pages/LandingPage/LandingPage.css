@@ -1,98 +1,57 @@
-/* LandingPage.css */
-
-/* Root Styles */
-:root {
-  --primary-color: #ff9933; /* Orange */
-  --secondary-color: #07112f; /* Green */
-  --background-color: #ffffff; /* White */
-  --text-color: #333;
-}
-
-/* Hero Section */
+/* General Hero Section Styling */
 .hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('your-hero-image-url.jpg'); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  color: var(--background-color);
-  text-align: center;
   position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* Center the carousel horizontally */
+  background-color: #f5f5f5; /* Fallback background color */
+  padding: 20px 0; /* Add padding to control vertical spacing */
 }
 
-.hero-content {
-  z-index: 1;
+/* Carousel Container Styling */
+.carousel-wrapper {
+  width: 70%;  /* Adjust the size of the carousel wrapper to be smaller */
+  max-width: 600px;  /* You can control the max size here */
+  margin: 0 auto;  /* Center the carousel container */
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+/* Carousel Image Styling */
+.carousel-slide img {
+  width: 100%;
+  height: auto;  /* Maintain the image's aspect ratio */
+  object-fit: contain;  /* Make sure the entire image is visible without cropping */
 }
 
-.hero p {
-  font-size: 1.5em;
-  margin-bottom: 20px;
+/* Customizing the Carousel Dots */
+.carousel .control-dots .dot {
+  background-color: #ff7f50; /* Change dot color */
 }
 
-.cta-button {
-  padding: 10px 20px;
-  margin: 0 10px;
-  border: none;
-  background: var(--secondary-color);
-  color: var(--background-color);
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s ease, transform 0.3s ease;
+.carousel .control-dots .dot.selected {
+  background-color: #ff6347; /* Change the selected dot color */
 }
 
-.cta-button.secondary {
-  background: var(--primary-color);
-}
-
-.cta-button:hover {
-  background: #6ebc1a; /* Slightly different shade for hover effect */
-  transform: translateY(-2px); /* Lift effect */
-}
-
-/* Ticker Section */
+/* Ticker Styling */
 .ticker {
-  background: var(--secondary-color);
-  color: var(--background-color);
-  padding: 10px;
-  overflow: hidden;
+  background-color: #0c056d;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
-.ticker-content {
-  display: inline-block;
-  white-space: nowrap;
-  animation: ticker-animation 15s linear infinite;
+.ticker-content p {
+  margin: 0;
+  animation: ticker-scroll 10s linear infinite;
 }
 
-@keyframes ticker-animation {
+/* Keyframes for Ticker Animation */
+@keyframes ticker-scroll {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(-100%);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5em;
-  }
-
-  .hero p {
-    font-size: 1.2em;
-  }
-
-  .cta-button {
-    font-size: 0.9em;
   }
 }
