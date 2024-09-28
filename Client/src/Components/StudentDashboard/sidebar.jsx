@@ -12,7 +12,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import { BookOpenCheck, ChevronRight, CircleHelp, CloudUpload, CloudUploadIcon, MousePointer2, Scroll, ScrollText, ShieldCheck, User } from "lucide-react";
+import { BookOpenCheck, ChevronRight, CircleHelp, CloudUpload, CloudUploadIcon, LogOut, MousePointer2, Scroll, ScrollText, ShieldCheck, User } from "lucide-react";
 
 const StudentSidebar = () => {
   return (
@@ -117,6 +117,20 @@ const StudentSidebar = () => {
                     </div>
                     <h2 className="text-gray-500 text-sm font-medium leading-snug">
                       Help
+                    </h2>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <div className="flex-col flex p-3 bg-white rounded-lg">
+                  <div className="h-5 gap-3 flex items-center">
+                    <div className="relative">
+                    <LogOut className="h-6 w-6 text-slate-500" />
+                    </div>
+                    <h2 className="text-gray-500 text-sm font-medium leading-snug">
+                      LogOut
                     </h2>
                   </div>
                 </div>
