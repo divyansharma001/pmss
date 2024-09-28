@@ -66,7 +66,7 @@ const Navbar = () => {
                     <a href="#contact-support">Contact Support</a>
                   </li>
                   <li>
-                    <a href="#faqs">FAQs</a>
+                    <a href="/faqs">FAQs</a>
                   </li>
                 </ul>
               </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <a href="#application">Application Process</a>
         </li>
         <li>
-          <a href="#contact">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </li>
       </ul>
       <div className="auth-buttons">
