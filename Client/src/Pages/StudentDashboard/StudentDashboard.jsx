@@ -8,6 +8,7 @@ export default function StudentDashboard() {
       <StudentSidebar/>
       <div className="bg-blue-100 w-full rounded-lg shadow-sm">
         {/* insertProgressbarComponentHere */}
+        
       </div>
     </div>
   );
