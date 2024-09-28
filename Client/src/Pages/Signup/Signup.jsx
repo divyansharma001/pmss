@@ -1,5 +1,6 @@
 import React from "react";
 import "./Signup.css"; // Import the CSS file
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -12,9 +13,9 @@ const Signup = () => {
             an account to get access to exclusive offers, rewards, and
             discounts.
           </p>
-          <a href="#" className="signin-link">
+          <Link to='/signin' className="signin-link">
             Already have an account? Signin.
-          </a>
+          </Link>
         </div>
         <div className="signup-right">
           <h2>Signup</h2>
@@ -23,7 +24,7 @@ const Signup = () => {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <input type="password" placeholder="Confirm Password" />
-            <button type="submit">Signup</button>
+            <Link to='/signin'><button type="submit">Signup</button></Link>
           </form>
         </div>
       </div>

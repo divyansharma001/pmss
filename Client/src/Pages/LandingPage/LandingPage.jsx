@@ -1,5 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -9,7 +10,7 @@ const LandingPage = () => {
         <div className="hero-content">
           <h1>Empowering Education through PMSSS</h1>
           <p>Providing scholarships to deserving students across India.</p>
-          <button className="cta-button">Apply Now</button>
+          <Link to='/signup'><button className="cta-button">Apply Now</button></Link>
           <button className="cta-button secondary">Learn More</button>
         </div>
       </header>

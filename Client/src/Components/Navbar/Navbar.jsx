@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
@@ -10,10 +11,10 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">PMSSS</div>
+     <Link to='/'><div className="navbar-logo">PMSSS</div></Link> 
       <ul className="navbar-links">
         <li>
-          <a href="#home">Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li
           className="has-mega-menu"
