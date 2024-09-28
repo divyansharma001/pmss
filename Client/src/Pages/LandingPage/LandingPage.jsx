@@ -8,6 +8,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       {/* Hero Section with Carousel */}
+      {/* Hero Section with Carousel */}
       <header className="hero">
         <Carousel
           autoPlay
