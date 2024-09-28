@@ -7,33 +7,20 @@ const Signin = () => {
     <div className="page-container">
       <div className="signin-container">
         <div className="signin-left">
-          <h2>Signin</h2>
+          <h2>Scholarship Sign In</h2>
           <form>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <Link to='/dashboard'><button type="submit">Signin</button></Link>
+            <Link to='/dashboard'><button type="submit">Sign In</button></Link>
           </form>
-          {/* <p   */}
-          {/* <div className="social-signin">
-            <a href="#">
-              <i className="fa fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-google-plus"></i>
-            </a>
-            <a href="#">
-              <i className="fa fa-linkedin"></i>
-            </a>
-          </div> */}
         </div>
         <div className="signin-right">
-          <h2>Welcome back!</h2>
+          <h2>Welcome to the Scholarship Portal!</h2>
           <p>
-            Welcome back! We are so happy to have you here. It's great to see
-            you again. We hope you had a safe and enjoyable time away.
+            Sign in to access your scholarship applications, track your status, and manage your documents. We are committed to supporting your academic journey.
           </p>
           <Link to='/signup' className="signup-link">
-            No account yet? Signup.
+            Don't have an account? Sign up for the Scholarship Portal.
           </Link>
         </div>
       </div>
