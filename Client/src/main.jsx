@@ -13,9 +13,10 @@ import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Signin from "./Pages/Signin/Signin.jsx";
 import Signup from "./Pages/Signup/Signup.jsx";
 import StudentDashBoardLayout from "./Components/StudentDashboard/layout.jsx";
-import StudentDashboard from "./Pages/StudentDashboard/dashboard.jsx";
+import StudentDashboard from "./Pages/StudentDashboard/StudentDashboard.jsx";
 // import Faqs from "./Components/Faq/Faq.jsx";
 import Contact from "./Components/ContactUs.jsx";
+import StudentForm from "./Pages/FormSubmission/FormSubmission.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       </Route>
       {/* <Route path="faqs" element={<Faqs />} /> */}
       <Route path="contact" element={<Contact />} />
+      <Route path="apply" element={<StudentForm/>} />
     </Route>
   )
 );
