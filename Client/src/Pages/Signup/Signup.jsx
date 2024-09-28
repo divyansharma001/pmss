@@ -22,7 +22,7 @@ const Signup = () => {
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
             <input type="password" placeholder="Confirm Password" />
-            <Link to='/signin'><button type="submit">Sign Up</button></Link>
+            <Link to='/signin'><button type="submit">Sign Up (Demo Version) </button></Link>
           </form>
         </div>
       </div>

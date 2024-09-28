@@ -5,6 +5,7 @@ import MileStone from "@/Components/Landingpage/mileStone";
 import FlowChart from "@/Components/Landingpage/flowChart";
 import Notice from "@/Components/Landingpage/notice";
 import About from "@/Components/Landingpage/about";
+import NoticeCarousel from "@/Components/Landingpage/noticeCarousel";
 
 const LandingPage = () => {
   return (
@@ -33,7 +34,8 @@ const LandingPage = () => {
       <MileStone />
       <About />
       <FlowChart />
-      <Notice />
+      {/* <Notice /> */}
+      <NoticeCarousel/>
     </div>
   );
 };

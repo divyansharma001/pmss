@@ -9,12 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
-
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Signin from "./Pages/Signin/Signin.jsx";
 import Signup from "./Pages/Signup/Signup.jsx";
 import StudentDashBoardLayout from "./Components/StudentDashboard/layout.jsx";
 import StudentDashboard from "./Pages/StudentDashboard/dashboard.jsx";
+// import Faqs from "./Components/Faq/Faq.jsx";
+import Contact from "./Components/ContactUs.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,8 @@ const router = createBrowserRouter(
       <Route path="student" element={<StudentDashBoardLayout />}>
         <Route path="dashboard" element={<StudentDashboard />} />
       </Route>
+      {/* <Route path="faqs" element={<Faqs />} /> */}
+      <Route path="contact" element={<Contact />} />
     </Route>
   )
 );

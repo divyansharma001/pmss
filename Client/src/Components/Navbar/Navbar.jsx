@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar z-10 w-full">
+    <nav className="navbar z-0 w-full">
       <div className="navbar-logo-container">
         <Link to="/">
           <img src={AICTE_Logo} alt="AICTE Logo" className="navbar-logo-img" />
@@ -65,7 +65,7 @@ const Navbar = () => {
                     <a href="#contact-support">Contact Support</a>
                   </li>
                   <li>
-                    <a href="#faqs">FAQs</a>
+                    <a href="/faqs">FAQs</a>
                   </li>
                 </ul>
               </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
           <a href="#application">Application Process</a>
         </li>
         <li>
-          <a href="#contact">Contact Us</a>
+          <a href="/contact">Contact Us</a>
         </li>
       </ul>
       <div className="auth-buttons">
