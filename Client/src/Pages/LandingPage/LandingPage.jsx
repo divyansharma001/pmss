@@ -1,40 +1,20 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "./LandingPage.css"; // Assuming you already have the necessary styles
-import heroImg from "../../../public/hero.png";
+import "./LandingPage.css";
+import heroImg from "../../../public/hero.png"; // Update the path if necessary
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      {/* Hero Section with Carousel */}
-      {/* Hero Section with Carousel */}
+      {/* Hero Section with Static Image */}
       <header className="hero">
-        <Carousel
-          autoPlay
-          infiniteLoop
-          showThumbs={false}
-          showStatus={false}
-          interval={5000}
-        >
-          {/* Slide 1 */}
-          <div className="carousel-slide">
-            <img src={heroImg} alt="Scholarship Banner" />{" "}
-            {/* Update the image path */}
+        <div className="hero-image-container">
+          <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
+          {/* Overlapping buttons */}
+          <div className="hero-buttons">
+            <button className="btn orange-btn">New User Registration</button>
+            <button className="btn orange-btn">Track My Application</button>
           </div>
-          {/* Slide 2 */}
-          <div className="carousel-slide">
-            <img src={heroImg} alt="Scholarship Banner" />
-          </div>
-          {/* Slide 3 */}
-          <div className="carousel-slide">
-            <img src={heroImg} alt="Scholarship Banner" />
-          </div>
-          {/* Slide 4 */}
-          <div className="carousel-slide">
-            <img src={heroImg} alt="Scholarship Banner" />
-          </div>
-        </Carousel>
+        </div>
       </header>
 
       {/* Scrolling Ticker */}
@@ -46,8 +26,6 @@ const LandingPage = () => {
           </p>
         </div>
       </div>
-
-      {/* Additional sections can be added here */}
     </div>
   );
 };
