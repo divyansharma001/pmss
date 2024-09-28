@@ -13,7 +13,8 @@ import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
 import Signin from "./Pages/Signin/Signin.jsx";
 import Signup from "./Pages/Signup/Signup.jsx";
-
+import StudentDashBoardLayout from "./Components/StudentDashboard/layout.jsx";
+import StudentDashboard from "./Pages/StudentDashboard/dashboard.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,9 @@ const router = createBrowserRouter(
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="signin" element={<Signin />} />
       <Route path="signup" element={<Signup />} />
+      <Route path="student" element={<StudentDashBoardLayout />}>
+        <Route path="dashboard" element={<StudentDashboard />} />
+      </Route>
     </Route>
   )
 );
