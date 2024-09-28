@@ -9,7 +9,7 @@ export default function StudentDashBoardHeader() {
       {/* <h2 className="text-xl font-extrabold">PMSSS</h2> */}
       <div>
         <Link to="/">
-          <img src={AICTE_Logo} alt="AICTE Logo" className="block" />
+          <img src={AICTE_Logo} alt="AICTE Logo" className="block h-[54px]" />
         </Link>
       </div>
       <div className="flex flex-1 gap-3 items-center justify-end cursor-pointer">
