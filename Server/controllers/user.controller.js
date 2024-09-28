@@ -2,20 +2,18 @@ import { User } from '../models/user.model';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-export const register = async (req, res) => {
+export const signup = async (req, res) => {
     const { username, email, password } = req.body;
 
     try {
-        // Check if user already exists
+        
         const existingUser = await User.findOne({ where: { email } });
         if (existingUser) {
             return res.status(400).json({ error: 'User with this email already exists' });
         }
-
-        // Hash the password
+  
         const hashedPassword = await bcrypt.hash(password, 10);
 
-        // Create the user with the hashed password
         const user = await User.create({
             username,
             email,
@@ -24,7 +22,7 @@ export const register = async (req, res) => {
 
      
         const token = jwt.sign({ id: user.id, username: user.username }, process.env.JWT_SECRET, {
-            expiresIn: '1h', 
+            expiresIn: '4h', 
         });
 
         res.status(201).json({

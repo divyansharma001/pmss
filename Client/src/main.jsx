@@ -9,10 +9,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage/LandingPage.jsx";
-import Sidebar from "./Components/Sidebar/Sidebar.jsx";
+
 import Dashboard from "./Pages/Dashboard/Dashboard.jsx";
-import Signin from "./Components/Signin/Signin.jsx";
-import Signup from "./Components/Signup/Signup.jsx";
+import Signin from "./Pages/Signin/Signin.jsx";
+import Signup from "./Pages/Signup/Signup.jsx";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
