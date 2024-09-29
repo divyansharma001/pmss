@@ -11,15 +11,24 @@ const Signin = () => {
           <form>
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <Link to='/apply'><button type="submit">Sign In(Demo Version)</button></Link>
+            <div className="flex flex-col gap-2">
+              <Link to="/apply">
+                <button type="submit">Sign In(Demo Version)</button>
+              </Link>
+              <Link to="/dashboard">
+                <button type="submit">Sign In(Admin Demo Version)</button>
+              </Link>
+            </div>
           </form>
         </div>
         <div className="signin-right">
           <h2>Welcome to the Scholarship Portal!</h2>
           <p>
-            Sign in to access your scholarship applications, track your status, and manage your documents. We are committed to supporting your academic journey.
+            Sign in to access your scholarship applications, track your status,
+            and manage your documents. We are committed to supporting your
+            academic journey.
           </p>
-          <Link to='/signup' className="signup-link">
+          <Link to="/signup" className="signup-link">
             Don't have an account? Sign up for the Scholarship Portal.
           </Link>
         </div>

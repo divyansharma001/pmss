@@ -12,8 +12,8 @@ const LandingPage = () => {
     <div className="landing-page overflow-x-hidden flex flex-col items-center">
       {/* Hero Section with Static Image */}
       <header className="hero">
-        <div className="hero-image-container mt-0.5">
-          <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
+        <div className="hero-image-container mt-0.5 w-full">
+          <img src={heroImg} alt="Scholarship Banner" className="hero-image object-cover" />
           {/* Overlapping buttons */}
           <div className="hero-buttons">
             <button className="btn orange-btn">New User Registration</button>
