@@ -9,14 +9,16 @@ import {
 import { noticeLabels } from "@/config";
 import { Button } from "../ui/button";
 import { Eye, Sparkles } from "lucide-react";
+import flowchart from "../../assets/new.gif"
 
 export default function NoticeCarousel() {
   return (
+    <div className="bg-red-50 p-14   items-center">
     <Carousel
       opts={{
         align: "start",
       }}
-      className="w-[75%] -z-0"
+      className="w-[80%] ml-40 -z-0"
     >
       <CarouselContent>
         {noticeLabels.map((label) => (
@@ -26,11 +28,11 @@ export default function NoticeCarousel() {
                 <CardContent className="flex h-[180px] items-center justify-center p-6 flex-col">
                   {label.new ? (
                     <span>
-                      <Sparkles className="mt-2" />
+                      <img src={flowchart} className="-mt-6 w-20" />
                     </span>
                   ) : null}
                   {label.label}
-                  <Button className="mt-2">
+                  <Button className="fixed mt-28">
                     <Eye /> View More
                   </Button>
                 </CardContent>
@@ -42,5 +44,6 @@ export default function NoticeCarousel() {
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>
+    </div>
   );
 }

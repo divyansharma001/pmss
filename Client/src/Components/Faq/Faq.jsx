@@ -4,6 +4,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import bg from '../../assets/bg.jpg'
 
 const faqs = [
   {
@@ -115,9 +116,9 @@ const faqs = [
 ];
 
 export default function Example() {
-  return (
-    <div className="bg-white">
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+  return ( 
+    <div className="bg-blue-50" style={{ backgroundImage: `url(${bg})`}}>
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-20">
         <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
           <h2 className="text-2xl font-bold leading-10 tracking-tight text-gray-900">
             Frequently asked questions

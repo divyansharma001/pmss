@@ -1,10 +1,13 @@
 import React from "react";
 import "./Signup.css"; // Import the CSS file
 import { Link } from "react-router-dom";
+import bg from '../../assets/bg.jpg'
 
 const Signup = () => {
   return (
-    <div className="page-container">
+    <div className="page-container" style={{
+      backgroundImage: `url(${bg})`
+    }}>
       <div className="signup-container">
         <div className="signup-left">
           <h2>Join the Scholarship Portal!</h2>

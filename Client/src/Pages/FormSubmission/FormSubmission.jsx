@@ -1,18 +1,59 @@
 import React, { useState } from "react";
 import { Upload } from "lucide-react";
 import { Link } from "react-router-dom";
+import bg from '../../assets/bg.jpg'
+import { CheckIcon } from '@heroicons/react/24/solid';
+
+
 
 const StudentForm = () => {
   const [step, setStep] = useState(1);
+  const [steps, setSteps] = useState([
+    { id: '01', name: 'Personal Details', href: '#', status: 'current' },
+    { id: '02', name: 'Educational Details', href: '#', status: 'upcoming' },
+    { id: '03', name: 'Upload Documents', href: '#', status: 'upcoming' },
+    { id: '04', name: 'Choice Filling', href: '#', status: 'upcoming' },
+    { id: '05', name: 'Review and Submit', href: '#', status: 'upcoming' },
+  ]);
   const [imagePreview, setImagePreview] = useState(null);
   const totalSteps = 5;
 
   const nextStep = () => {
-    if (step < totalSteps) setStep(step + 1);
+    if (step < totalSteps) {
+      setStep(step + 1);
+      
+      // Update steps status
+      const updatedSteps = steps.map((s, index) => {
+        if (index < step) {
+          return { ...s, status: 'complete' }; // Mark previous steps as complete
+        } else if (index === step) {
+          return { ...s, status: 'current' }; // Mark current step
+        } else {
+          return { ...s, status: 'upcoming' }; // Mark upcoming steps
+        }
+      });
+      
+      // Update the steps state (if you have a state for steps)
+      setSteps(updatedSteps);
+    }
   };
 
   const prevStep = () => {
-    if (step > 1) setStep(step - 1);
+    if (step > 1) {
+      setStep(step - 1);
+      
+      const updatedSteps = steps.map((s, index) => {
+        if (index < step - 1) {
+          return { ...s, status: 'complete' };
+        } else if (index === step - 1) {
+          return { ...s, status: 'current' };
+        } else {
+          return { ...s, status: 'upcoming' };
+        }
+      });
+      
+      setSteps(updatedSteps);
+    }
   };
 
   const handleImageUpload = (event) => {
@@ -26,27 +67,62 @@ const StudentForm = () => {
     }
   };
 
-  const CheckpointProgress = () => {
+  const CheckpointProgress = ({ currentStep }) => {
     return (
-      <div className="flex justify-between mb-8 relative z-0">
-        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 -z-10" />
-        {[...Array(totalSteps)].map((_, index) => (
-          <div key={index} className="text-center relative z-10">
-            <div
-              className={`w-8 h-8 rounded-full flex items-center justify-center mx-auto mb-1 ${
-                index + 1 <= step
-                  ? "bg-blue-500 text-white"
-                  : "bg-white border-2 border-gray-300 text-gray-500"
-              }`}
-            >
-              {index + 1}
-            </div>
-            <div className="text-xs text-gray-600">Step {index + 1}</div>
-          </div>
+      <nav aria-label="Progress">
+        <ol role="list" className="divide-y divide-gray-300 rounded-md border border-gray-300 md:flex md:divide-y-0">
+          {steps.map((step, stepIdx) => (
+            <li key={step.name} className="relative md:flex md:flex-1">
+              {step.status === 'complete' ? (
+                <a href={step.href} className="group flex w-full items-center">
+                  <span className="flex items-center px-6 py-4 text-sm font-medium">
+                    <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-indigo-600 group-hover:bg-indigo-800">
+                      <CheckIcon aria-hidden="true" className="h-6 w-6 text-white" />
+                    </span>
+                    <span className="ml-4 text-sm font-medium text-gray-900">{step.name}</span>
+                  </span>
+                </a>
+              ) : step.status === 'current' ? (
+                <a href={step.href} aria-current="step" className="flex items-center px-6 py-4 text-sm font-medium">
+                  <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-indigo-600">
+                    <span className="text-indigo-600">{step.id}</span>
+                  </span>
+                  <span className="ml-4 text-sm font-medium text-indigo-600">{step.name}</span>
+                </a>
+              ) : (
+                <a href={step.href} className="group flex items-center">
+                  <span className="flex items-center px-6 py-4 text-sm font-medium">
+                    <span className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-gray-300 group-hover:border-gray-400">
+                      <span className="text-gray-500 group-hover:text-gray-900">{step.id}</span>
+                    </span>
+                    <span className="ml-4 text-sm font-medium text-gray-500 group-hover:text-gray-900">{step.name}</span>
+                  </span>
+                </a>
+              )}
+              {stepIdx !== steps.length - 1 ? (
+              <div aria-hidden="true" className="absolute right-0 top-0 hidden h-full w-5 md:block">
+                <svg
+                  fill="none"
+                  viewBox="0 0 22 80"
+                  preserveAspectRatio="none"
+                  className="h-full w-full text-gray-300"
+                >
+                  <path
+                    d="M0 -2L20 40L0 82"
+                    stroke="currentcolor"
+                    vectorEffect="non-scaling-stroke"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            ) : null}
+          </li>
         ))}
-      </div>
-    );
-  };
+      </ol>
+    </nav>
+  );
+};
+  
 
   const renderStep = () => {
     switch (step) {
@@ -733,7 +809,10 @@ const StudentForm = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg">
+    <div style={{
+      backgroundImage: `url(${bg})`
+    }}>
+    <div className="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg" >
       <CheckpointProgress />
       {renderStep()}
       <div className="flex justify-between mt-6">
@@ -760,7 +839,7 @@ const StudentForm = () => {
           {step === totalSteps ? "Submit" : "Next"}
         </button>
       </div>
-    </div>
+    </div></div>
   );
 };
 
