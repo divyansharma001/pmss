@@ -87,7 +87,7 @@
   /* Right side (Welcome message) with gradient background */
   .signin-right {
     flex: 1;
-    background: linear-gradient(135deg, #00095e, #00095e);
+    background: linear-gradient(135deg, #4c58c6, #1e32e6);
     color: white;
     padding: 50px;
     display: flex;

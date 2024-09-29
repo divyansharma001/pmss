@@ -32,6 +32,8 @@
 
 /* Navbar Links */
 .navbar-links {
+  position: relative;
+  right: -8%;
   list-style: none;
   display: flex;
   

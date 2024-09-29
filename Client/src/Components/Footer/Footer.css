@@ -1,10 +1,13 @@
 /* Footer.css */
 
 .footer {
+  z-index: 1000000;
+  position: relative;
     background: linear-gradient(90deg, #00095e, #575a79); /* Green Gradient */
     color: #ffffff; /* White */
     padding: 20px;
     text-align: center;
+    
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
   }
   

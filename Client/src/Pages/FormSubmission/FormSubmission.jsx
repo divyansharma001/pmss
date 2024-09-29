@@ -798,9 +798,14 @@ const StudentForm = () => {
                 <span>I agree to the terms and conditions</span>
               </label>
             </div>
-            <button className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300">
-              Submit Application
-            </button>
+            <Link to="/student/dashboard">
+              <button
+                to="/student/dashboard"
+                className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600 transition duration-300"
+              >
+                Submit Application
+              </button>
+            </Link>
           </div>
         );
       default:

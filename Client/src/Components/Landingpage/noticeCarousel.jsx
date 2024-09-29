@@ -18,7 +18,7 @@ export default function NoticeCarousel() {
       opts={{
         align: "start",
       }}
-      className="w-[80%] ml-40 -z-0"
+      className="w-[75%] ml-56 -z-0"
     >
       <CarouselContent>
         {noticeLabels.map((label) => (
@@ -32,7 +32,7 @@ export default function NoticeCarousel() {
                     </span>
                   ) : null}
                   {label.label}
-                  <Button className="fixed mt-28">
+                  <Button className="mt-2 hover:shadow-xl hover:bg-white hover:text-black">
                     <Eye /> View More
                   </Button>
                 </CardContent>
