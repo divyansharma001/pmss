@@ -21,12 +21,16 @@ import PersonalDetails from "./Pages/StudentDashboard/PersonalInfoStudent.jsx";
 import EducationalDetails from "./Pages/StudentDashboard/EducationalDetails.jsx";
 import DocumentDetails from "./Pages/StudentDashboard/DocumentDetails.jsx"
 import ChoiceFilling from "./Pages/StudentDashboard/ChoiceFilling.jsx";
+import CandidatesApplied from "./Pages/Dashboard/CandidatesApplied.jsx"
+import DocumentScanningAdmin from "./Pages/Dashboard/DocumentScanning.jsx.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="" element={<LandingPage />} />
       <Route path="dashboard" element={<Dashboard />} />
+      <Route path="dashboard-applications" element={<CandidatesApplied />} />
+      <Route path="dashboard-scanning" element={<DocumentScanningAdmin />} />
       <Route path="signin" element={<Signin />} />
       <Route path="signup" element={<Signup />} />
       <Route path="student" element={<StudentDashBoardLayout />}>

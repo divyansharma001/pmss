@@ -3,53 +3,13 @@ import { FiUserCheck, FiUserX } from "react-icons/fi";
 import { IoDocumentLockOutline } from "react-icons/io5";
 import { FaRegNewspaper } from "react-icons/fa";
 import { BsChatRightDots } from "react-icons/bs";
+import {Link } from "react-router-dom"
 
 const Sidebar = () => {
   return (
     <div className="">
       <div className="w-80 p-2 bg-white flex-col justify-start items-start gap-5 inline-flex border-r">
-        <div className="w-full p-3 rounded-lg border border-gray-300">
-          <div className="w-full items-center flex">
-            <div className="w-full justify-between items-center inline-flex">
-              <div className="items-center flex">
-                <img
-                  className="rounded-lg"
-                  alt="Ronald image"
-                  src="https://pagedone.io/asset/uploads/1701235464.png"
-                />
-                <div className="flex-col inline-flex ml-2.5">
-                  <h2 className="text-gray-700 text-sm font-semibold leading-snug">
-                    Ankush kumar
-                  </h2>
-                  <h6 className="text-black/20 text-xs font-normal leading-4">
-                    Ankushkumar11903@gmail.com
-                  </h6>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <a href="javascript:;" className="w-5 h-5 relative">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                  >
-                    <g id="More Vertical">
-                      <path
-                        id="icon"
-                        d="M10.0156 14.9896V15.0396M10.0156 9.97595V10.026M10.0156 4.96228V5.01228"
-                        stroke="black"
-                        stroke-width="2.5"
-                        stroke-linecap="round"
-                      />
-                    </g>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         <div className="w-full">
           <div className="w-full h-8 px-3 items-center flex">
             <h6 className="text-gray-500 text-xs font-semibold leading-4">
@@ -95,9 +55,11 @@ const Sidebar = () => {
                         </g>
                       </svg>
                     </div>
-                    <h2 className="text-gray-500 text-sm font-medium leading-snug">
+                    <Link to="/dashboard">                    <h2 className="text-gray-500 text-sm font-medium leading-snug">
                       Dashboard
                     </h2>
+                    </Link>
+
                   </div>
                 </div>
               </a>
@@ -196,6 +158,7 @@ const Sidebar = () => {
             </li>
             <li>
               <a href="javascript:;">
+                <Link to="/dashboard-applications">
                 <div className="flex-col gap-1 flex">
                   <div className="flex-col flex bg-white rounded-lg p-3">
                     <div className="h-5 gap-3 flex">
@@ -223,6 +186,7 @@ const Sidebar = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
               </a>
             </li>
             <li>
@@ -284,9 +248,11 @@ const Sidebar = () => {
                           </g>
                         </svg>
                       </div>
+                      <Link to="/dashboard-scanning">
                       <h2 className="text-gray-500 text-sm font-medium leading-snug">
                         Scan Documents
                       </h2>
+                      </Link>
                     </div>
                   </div>
                 </div>
