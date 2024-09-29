@@ -12,7 +12,7 @@ const LandingPage = () => {
     <div className="landing-page overflow-x-hidden flex flex-col items-center">
       {/* Hero Section with Static Image */}
       <header className="hero">
-        <div className="hero-image-container">
+        <div className="hero-image-container mt-0.5">
           <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
           {/* Overlapping buttons */}
           <div className="hero-buttons">
@@ -33,9 +33,9 @@ const LandingPage = () => {
       </div>
       <MileStone />
       <About />
-      <FlowChart />
       {/* <Notice /> */}
       <NoticeCarousel/>
+      <FlowChart />
     </div>
   );
 };

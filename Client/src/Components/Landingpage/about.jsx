@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="text-left w-full bg-stone-300 py-16 px-8">
+    <div className="text-left w-full bg-white py-16 px-36">
       <h1 className="text-[64px] font-semibold mb-4">What is PMSSS?</h1>
       <p className="text-lg font-light">
         PMSSS stands for Prime Minister's Special Scholarship Scheme. It's a

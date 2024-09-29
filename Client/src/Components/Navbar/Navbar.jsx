@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link, useLocation } from "react-router-dom";
 import AICTE_Logo from "../../../public/logo_new.png";
+import Moe_logo from "../../../public/MOE_logo.png"
 
 const Navbar = () => {
   const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
@@ -11,18 +12,18 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar z-0 w-full">
+    <nav className="navbar z-10 w-full">
       <div className="navbar-logo-container">
         <Link to="/">
-          <img src={AICTE_Logo} alt="AICTE Logo" className="navbar-logo-img" />
+          <img src={AICTE_Logo} alt="AICTE Logo" className="navbar-logo-img cursor-pointer" />
         </Link>
-        {/* <Link to="/">
+        <Link to="/">
           <img
             src={Moe_logo}
             alt="Ministry of Education Logo"
-            className="navbar-logo-img"
+            className="navbar-logo-img cursor-pointer"
           />
-        </Link> */}
+        </Link>
       </div>
       <ul className="navbar-links">
         <li>

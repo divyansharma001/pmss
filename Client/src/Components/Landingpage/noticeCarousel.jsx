@@ -16,7 +16,7 @@ export default function NoticeCarousel() {
       opts={{
         align: "start",
       }}
-      className="w-[75%]"
+      className="w-[75%] -z-0"
     >
       <CarouselContent>
         {noticeLabels.map((label) => (

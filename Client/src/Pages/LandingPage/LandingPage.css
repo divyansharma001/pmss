@@ -27,7 +27,7 @@
 /* Overlapping Buttons */
 .hero-buttons {
   position: absolute;
-  bottom: 10%;  /* Adjust position as necessary */
+  bottom: 5%;  /* Adjust position as necessary */
   left: 50%;
   transform: translateX(-50%);
   display: flex;

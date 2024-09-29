@@ -28,7 +28,7 @@ const StudentForm = () => {
 
   const CheckpointProgress = () => {
     return (
-      <div className="flex justify-between mb-8 relative">
+      <div className="flex justify-between mb-8 relative z-0">
         <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 -z-10" />
         {[...Array(totalSteps)].map((_, index) => (
           <div key={index} className="text-center relative z-10">
