@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
-import heroImg from "../../../public/Banner2.png"; // Update the path if necessary
+import heroImg from "../../../public/Banner3.png"; // Update the path if necessary
 import MileStone from "@/Components/Landingpage/mileStone";
 import FlowChart from "@/Components/Landingpage/flowChart";
 import Notice from "@/Components/Landingpage/notice";
@@ -12,13 +12,11 @@ const LandingPage = () => {
     <div className="landing-page overflow-x-hidden flex flex-col items-center">
       {/* Hero Section with Static Image */}
       <header className="hero">
-        <div className="hero-image-container">
-          <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
-          {/* Overlapping buttons */}
-          <div className="hero-buttons">
-            <button className="btn orange-btn">New User Registration</button>
-            <button className="btn orange-btn">Track My Application</button>
-          </div>
+        <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
+        {/* Overlapping buttons */}
+        <div className="hero-buttons">
+          <button className="btn orange-btn">New User Registration</button>
+          <button className="btn orange-btn">Track My Application</button>
         </div>
       </header>
 
