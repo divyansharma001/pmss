@@ -19,6 +19,8 @@ import Contact from "./Components/ContactUs.jsx";
 import StudentForm from "./Pages/FormSubmission/FormSubmission.jsx";
 import PersonalDetails from "./Pages/StudentDashboard/PersonalInfoStudent.jsx";
 import EducationalDetails from "./Pages/StudentDashboard/EducationalDetails.jsx";
+import DocumentDetails from "./Pages/StudentDashboard/DocumentDetails.jsx"
+import ChoiceFilling from "./Pages/StudentDashboard/ChoiceFilling.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +33,8 @@ const router = createBrowserRouter(
         <Route path="dashboard" element={<StudentDashboard />} />
         <Route path="personal-details" element={<PersonalDetails />} />
         <Route path="education-details" element={<EducationalDetails />} />
+        <Route path="document-details" element={<DocumentDetails />} />
+        <Route path="choice-filling" element={<ChoiceFilling />} />
       </Route>
       <Route path="faqs" element={<Faqs />} />
       <Route path="contact" element={<Contact />} />

@@ -19,10 +19,10 @@ const Sidebar = () => {
                 />
                 <div className="flex-col inline-flex ml-2.5">
                   <h2 className="text-gray-700 text-sm font-semibold leading-snug">
-                    Rahul Sharma
+                    Ankush kumar
                   </h2>
                   <h6 className="text-black/20 text-xs font-normal leading-4">
-                    rahul11@gmail.com
+                    Ankushkumar11903@gmail.com
                   </h6>
                 </div>
               </div>

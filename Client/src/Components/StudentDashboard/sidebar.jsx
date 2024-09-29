@@ -3,6 +3,7 @@ import { FiUserCheck, FiUserX } from "react-icons/fi";
 import { IoDocumentLockOutline } from "react-icons/io5";
 import { FaRegNewspaper } from "react-icons/fa";
 import { BsChatRightDots } from "react-icons/bs";
+import avtar from "../../assets/awatar.png"
 import {Link} from 'react-router-dom'
 import {
   DropdownMenu,
@@ -62,9 +63,11 @@ const StudentSidebar = () => {
                     <Scroll /> Educational
                   </li>
                   </Link>
+                  <Link to="/student/Document-details">
                   <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
                     <CloudUploadIcon /> Upload Documents
                   </li>
+                  </Link>
                   <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
                     <ShieldCheck /> Verification
                   </li>
@@ -72,7 +75,8 @@ const StudentSidebar = () => {
               </div>
             )}
             <li>
-              <a href="javascript:;">
+              <Link to="/student/choice-filling">
+                           <a href="javascript:;">
                 <div className="flex-col flex p-3 bg-white rounded-lg">
                   <div className="h-5 gap-3 flex items-center">
                     <div className="relative">
@@ -84,6 +88,8 @@ const StudentSidebar = () => {
                   </div>
                 </div>
               </a>
+              </Link>
+ 
             </li>
             <li>
               <a href="javascript:;">
@@ -120,16 +126,16 @@ const StudentSidebar = () => {
             <div className="w-full justify-between items-center inline-flex">
               <div className="items-center flex">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg w-10"
                   alt="Ronald image"
-                  src="https://pagedone.io/asset/uploads/1701235464.png"
+                  src={avtar}
                 />
                 <div className="flex-col inline-flex ml-2.5">
                   <h2 className="text-gray-700 text-sm font-semibold leading-snug">
-                    Rahul Sharma
+                    Ankush Kumar
                   </h2>
                   <h6 className="text-black/20 text-xs font-normal leading-4">
-                    rahul11@gmail.com
+                    Ankushkumar11903@gmail.com
                   </h6>
                 </div>
               </div>

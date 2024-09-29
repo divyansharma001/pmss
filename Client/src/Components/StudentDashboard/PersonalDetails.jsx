@@ -3,8 +3,8 @@ import React from "react";
 const PersonalDetails = () => {
   // Dummy data for demonstration
   const personalDetails = {
-    fullName: "Rahul Sharma",
-    email: "rahul11@gmail.com",
+    fullName: "Ankush Kumar",
+    email: "Ankushkumar11903@gmail.com",
     fatherName: "Rajesh Sharma",
     motherName: "Suman Sharma",
     phone: "123-456-7890",
