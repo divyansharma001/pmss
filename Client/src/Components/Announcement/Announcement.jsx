@@ -5,7 +5,7 @@ const Announcement = () => {
   return (
     <div className="border border-[#E0E0E0] w-full lg:w-[650px] xl:w-full h-auto min-h-[345px] rounded-md relative">
       <div className="p-4 flex justify-between">
-        <div className="font-normal text-[18px]">Announcement</div>
+        <div className="font-normal text-[18px]">Announcements</div>
         <div><Select/></div>
       </div>
 
