@@ -3,6 +3,7 @@ import { FiUserCheck, FiUserX } from "react-icons/fi";
 import { IoDocumentLockOutline } from "react-icons/io5";
 import { FaRegNewspaper } from "react-icons/fa";
 import { BsChatRightDots } from "react-icons/bs";
+import {Link} from 'react-router-dom'
 import {
   DropdownMenu,
   DropdownMenuGroup,
@@ -38,9 +39,11 @@ const StudentSidebar = () => {
                         <div className="relative">
                         <ScrollText  className="h-6 w-6 text-slate-500" />
                         </div>
+                        <Link to="/student/dashboard">
                         <h2 className="text-gray-500 text-sm font-medium leading-snug">
                           Application
                         </h2>
+                        </Link>
                         <ChevronRight className="h-4 w-4 text-slate-600" />
                       </div>
                     </div>
@@ -50,12 +53,15 @@ const StudentSidebar = () => {
               <div className="flex-col gap-1 flex  bg-gray-100 rounded-lg p-0">
                 {/* <h3 className="text-gray-700">Application Details</h3> */}
                 <ul>
-                  <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
+                  <Link to="/student/personal-details">                 <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
                     <User /> Personal Details
                   </li>
+                  </Link>
+                  <Link to="/student/education-details">  
                   <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
                     <Scroll /> Educational
                   </li>
+                  </Link>
                   <li className="flex items-center gap-6 px-4 py-2 text-slate-600">
                     <CloudUploadIcon /> Upload Documents
                   </li>
