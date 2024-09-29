@@ -27,28 +27,34 @@
 /* Overlapping Buttons */
 .hero-buttons {
   position: absolute;
-  bottom: 5%;  /* Adjust position as necessary */
-  left: 50%;
-  transform: translateX(-50%);
+ bottom: 15%;  
+  left: 25%;
+  transform: translateX(-50%);  /* Center buttons horizontally */
   display: flex;
-  gap: 20px; /* Space between the buttons */
+  flex-direction: row;  /* Align buttons horizontally */
+  gap: 30px; /* Space between the buttons */
 }
 
 .btn {
-  padding: 15px 30px;
+  padding: 15px 30px;  /* Make the buttons larger */
   background-color: #ff9933; /* Orange color */
   border: none;
   color: white;
-  font-size: 16px;
-  border-radius: 5px;
+  font-size: 30px;  /* Increase font size */
+  border-radius: 20px;  /* Rounded corners */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-align: center;
+  font-weight: 600;
+  width: 300px; /* Set a fixed width for consistency */
+  height: 150px;
 }
 
 .btn:hover {
   background-color: #ff7f50; /* Lighter orange on hover */
 }
 
+/* Ticker Section */
 .ticker {
   background-color: #0c056d;
   color: white;

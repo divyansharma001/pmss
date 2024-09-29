@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
-import heroImg from "../../../public/hero.png"; // Update the path if necessary
+import heroImg from "../../../public/Banner.png"; // Update the path if necessary
 import MileStone from "@/Components/Landingpage/mileStone";
 import FlowChart from "@/Components/Landingpage/flowChart";
 import Notice from "@/Components/Landingpage/notice";
@@ -34,7 +34,7 @@ const LandingPage = () => {
       <MileStone />
       <About />
       {/* <Notice /> */}
-      <NoticeCarousel/>
+      <NoticeCarousel />
       <FlowChart />
     </div>
   );
