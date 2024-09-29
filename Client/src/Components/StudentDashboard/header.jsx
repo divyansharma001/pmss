@@ -20,10 +20,12 @@ export default function StudentDashBoardHeader() {
         <Info />
         <Bell />
         <BotMessageSquare />
+        <Link to="/">
         <Button className="bg-orange-400 text-white border hover:bg-black hover:text-white hover:border-black inline-flex gap-2 rounded-md items-center">
           <LogOut />
           Logout
         </Button>
+        </Link>
       </div>
     </header>
   );

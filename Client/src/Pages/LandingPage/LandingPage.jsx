@@ -1,6 +1,6 @@
 import React from "react";
 import "./LandingPage.css";
-import heroImg from "../../../public/Banner3.png"; // Update the path if necessary
+import heroImg from "../../assets/Banner3.png"; // Update the path if necessary
 import MileStone from "@/Components/Landingpage/mileStone";
 import FlowChart from "@/Components/Landingpage/flowChart";
 import Notice from "@/Components/Landingpage/notice";

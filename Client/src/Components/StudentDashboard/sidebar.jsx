@@ -107,6 +107,7 @@ const StudentSidebar = () => {
             </li>
             <li>
               <a href="javascript:;">
+                <Link to="/">
                 <div className="flex-col flex p-3 bg-white rounded-lg">
                   <div className="h-5 gap-3 flex items-center">
                     <div className="relative">
@@ -117,6 +118,7 @@ const StudentSidebar = () => {
                     </h2>
                   </div>
                 </div>
+                </Link>
               </a>
             </li>
           </ul>
