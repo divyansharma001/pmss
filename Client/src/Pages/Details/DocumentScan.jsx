@@ -7,11 +7,11 @@ import Pagination from '@mui/material/Pagination';
 
 // Dummy student documents data
 const initialDocuments = [
-  { id: 1, studentName: 'John Doe', documentType: 'Passport', status: 'Pending', uploadDate: '2024-01-15', file: 'passport_johndoe.pdf' },
-  { id: 2, studentName: 'Jane Smith', documentType: 'ID Card', status: 'Pending', uploadDate: '2024-01-16', file: 'id_janesmith.pdf' },
-  { id: 3, studentName: 'Sam Brown', documentType: 'Transcript', status: 'Approved', uploadDate: '2024-01-10', file: 'transcript_sambrown.pdf' },
-  { id: 4, studentName: 'Emily Davis', documentType: 'Transcript', status: 'Rejected', uploadDate: '2024-01-11', file: 'transcript_emilydavis.pdf' },
-  { id: 5, studentName: 'Chris Evans', documentType: 'Passport', status: 'Pending', uploadDate: '2024-01-18', file: 'passport_chrisevans.pdf' },
+  { id: 1, studentName: 'Aarav Patel', documentType: 'Passport', status: 'Pending', uploadDate: '2024-01-15', file: 'passport_johndoe.pdf' },
+  { id: 2, studentName: 'Priya Sharma', documentType: 'ID Card', status: 'Pending', uploadDate: '2024-01-16', file: 'id_janesmith.pdf' },
+  { id: 3, studentName: 'Vikram Singh', documentType: 'Transcript', status: 'Approved', uploadDate: '2024-01-10', file: 'transcript_sambrown.pdf' },
+  { id: 4, studentName: 'Neha Gupta', documentType: 'Transcript', status: 'Rejected', uploadDate: '2024-01-11', file: 'transcript_emilydavis.pdf' },
+  { id: 5, studentName: 'Rahul Mehta', documentType: 'Passport', status: 'Pending', uploadDate: '2024-01-18', file: 'passport_chrisevans.pdf' },
 ];
 
 // Stats data

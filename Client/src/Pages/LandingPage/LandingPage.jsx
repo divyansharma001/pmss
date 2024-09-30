@@ -14,7 +14,9 @@ const LandingPage = () => {
       <header className="hero">
         <img src={heroImg} alt="Scholarship Banner" className="hero-image" />
         {/* Overlapping buttons */}
-        <div className="hero-buttons">
+        <div className="hero-buttons" style={{
+          marginLeft:"-20px"
+        }}>
           <button className="btn orange-btn">New User Registration</button>
           <button className="btn orange-btn">Track My Application</button>
         </div>

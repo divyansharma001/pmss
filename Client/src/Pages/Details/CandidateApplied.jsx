@@ -14,19 +14,19 @@ import { IconButton } from "@mui/material";
 
 // Dummy candidate data
 const initialCandidates = [
-  { id: 1, name: "John Doe", course: "B.Tech", status: "Pending", details: "More info about John" },
-  { id: 2, name: "Jane Smith", course: "MBA", status: "Pending", details: "More info about Jane" },
-  { id: 3, name: "Sam Brown", course: "B.Sc", status: "Approved", details: "More info about Sam" },
-  { id: 4, name: "Emily Davis", course: "BBA", status: "Declined", details: "More info about Emily" },
-  { id: 5, name: "Chris Evans", course: "BBA", status: "Approved", details: "More info about Chris" },
-  { id: 6, name: "Robert Downey", course: "MBA", status: "Pending", details: "More info about Robert" },
+  { id: 1, name: "Aarav Patel", course: "B.Tech", status: "Pending", details: "More info about Aarav" },
+  { id: 2, name: "Priya Sharma", course: "MBA", status: "Pending", details: "More info about Priya" },
+  { id: 3, name: "Vikram Singh", course: "B.Sc", status: "Approved", details: "More info about Vikram" },
+  { id: 4, name: "Neha Gupta", course: "BBA", status: "Declined", details: "More info about Neha" },
+  { id: 5, name: "Rahul Mehta", course: "BBA", status: "Approved", details: "More info about Rahul" },
+  { id: 6, name: "Aisha Khan", course: "MBA", status: "Pending", details: "More info about Aisha" },
 ];
 
 // Dummy recent activities
 const initialActivities = [
-  { id: 1, action: 'Approved', candidate: 'John Doe', time: '10:00 AM' },
-  { id: 2, action: 'Declined', candidate: 'Emily Davis', time: '11:00 AM' },
-  { id: 3, action: 'Approved', candidate: 'Sam Brown', time: '1:00 PM' },
+  { id: 1, action: 'Approved', candidate: 'Aarav Patel', time: '10:00 AM' },
+  { id: 2, action: 'Declined', candidate: 'Priya Sharma', time: '11:00 AM' },
+  { id: 3, action: 'Approved', candidate: 'Vikram Singh', time: '1:00 PM' },
 ];
 
 // Statistics data for charts

@@ -64,7 +64,7 @@ const Sidebar = () => {
                 </div>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="javascript:;">
                 <div className="flex-col gap-1 flex">
                   <div className="flex-col flex p-3 bg-white rounded-lg">
@@ -96,66 +96,8 @@ const Sidebar = () => {
                   </div>
                 </div>
               </a>
-            </li>
-            <li>
-              <div className="flex-col flex">
-                <div className="flex-col flex p-3 bg-white rounded-lg">
-                  <div className="justify-between inline-flex">
-                    <a href="javascript:;" className="h-5 gap-3 flex">
-                      <div className="relative">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 20 20"
-                          fill="none"
-                        >
-                          <g id="Upload 02">
-                            <path
-                              id="icon"
-                              d="M8.1475 12.6968L9.99935 10.8333L11.8512 12.6968M9.99935 17.5V10.8795M5.36972 13.6805H4.92701C3.12601 13.6805 1.66602 12.2205 1.66602 10.4196C1.66602 8.61855 3.12601 7.15855 4.92701 7.15855V7.15855C5.17151 7.15855 5.36753 6.95973 5.39031 6.71629C5.61168 4.35087 7.59071 2.5 9.99935 2.5C12.5562 2.5 14.629 4.5857 14.629 7.15855H15.0717C16.8727 7.15855 18.3327 8.61855 18.3327 10.4196C18.3327 12.2205 16.8727 13.6805 15.0717 13.6805H14.629"
-                              stroke="#6B7280"
-                              stroke-width="1.6"
-                              stroke-linecap="round"
-                            />
-                          </g>
-                        </svg>
-                      </div>
-                      <h2 className="text-gray-500 text-sm font-medium leading-snug">
-                        Upload Documents
-                      </h2>
-                    </a>
-                    <a href="javascript:;" className="flex items-center gap-3">
-                      <div className="px-2.5 py-0.5 bg-indigo-100 rounded-3xl">
-                        <h6 className="text-indigo-600 text-xs font-medium leading-4">
-                          12
-                        </h6>
-                      </div>
-                      <div className="relative">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                        >
-                          <g id="Right arrow 4">
-                            <path
-                              id="icon"
-                              d="M6.00236 3.99719L10.0025 7.99736L6 11.9999"
-                              stroke="#6B7280"
-                              stroke-width="1.6"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                            />
-                          </g>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
+            </li> */}
+            
             <li>
               <a href="javascript:;">
                 <Link to="/dashboard-applications">
@@ -325,7 +267,7 @@ const Sidebar = () => {
                 </div>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="javascript:;">
                 <div className="p-3 rounded-lg items-center inline-flex">
                   <div className="h-5 items-center gap-3 flex">
@@ -338,7 +280,7 @@ const Sidebar = () => {
                   </div>
                 </div>
               </a>
-            </li>
+            </li> */}
             <li>
               <a href="javascript:;">
                 <div className="p-3 rounded-lg items-center inline-flex">
